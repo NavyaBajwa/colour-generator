@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f77754;
+}
+
+.container{
+    height: 320px;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+
+.colour-card{
+    background: #f77754;
+    /* the position is absolute because colour-cards' parent is .container
+    so colour-card's position is absolute to the containe, but
+    the container can be relative */
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 40px;
+    left: -50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 30px 0px 30px 30px;;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-left: 150px;
+}
+
+#hex{
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    margin: 20px;
+    text-transform: uppercase;
+    font-family: monaco;
+}
+
+button{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 6px 7px;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    font-family: monaco;
+}
